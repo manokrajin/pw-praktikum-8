@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    body {
+      background-color: #262729;
+      color: blue;
+    }
+  </style>
+
+</head>
+
+
+<header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Kantin Gaul
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" onclick="coba('all')">All</a>
+        </li>
+        <li class=" nav-item">
+          <a class="nav-link" href="#" onclick="coba('makanan')">Makanan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="coba('minuman')">Minuman</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="coba('cemilan')">Cemilan</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <br><br>
+  <div id="show" class="card-group row m-3 p-3">
+
+  </div>
+  </div>
+
+</body>
+
+<script>
+  const show = $('#show');
+  //show.html('');
+  // const cobacoba = async () => {
+  //   return await $.getJSON('menu.json');
+  // }
+
+  // let menu = $.getJSON("menu.json", function () {
+  //   console.log("success");
+  // })
+  //   .done(function () {
+  //     console.log("second success");
+  //   })
+  //   .fail(function (menu, textStatus, error) {
+  //     var err = textStatus + ", " + error;
+  //     console.log("Request Failed: " + err);
+  //   })
+  //   .always(function () {
+  //     console.log("complete");
+  //   });
+  // $.getJSON("menu.json").done((data) => {
+  //   console.log("second:" + data)
+  //   return data;
+  // });
+
+  // console.log(menu);
+  // //const obj = JSON.parse(menu);
+  function coba(value) {
+    filterData(value);
+
+  }
+
+  const filterData = async (category) => {
+    // Baca file jsonnya
+    let data = await $.getJSON('menu.json')
+    show.html('');
+    if (category == "all") {
+      for (let x = 0; x < data.menu.length; x++) {
+        let coba = `
+        <div class="col-lg-4 p-2 d-flex align-items-stretch">
+          <div class="card">
+              <img src="${data.menu[x].gambar}" class="card-img-top" alt="...">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">${data.menu[x].nama}</h5>
+                  <p class="card-text">${data.menu[x].deskripsi}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">${data.menu[x].harga}</li>
+                  <li class="list-group-item">${data.menu[x].estimasi}</li>
+                </ul>
+          </div>
+        </div> 
+    `
+        show.append(coba);
+      }
+    } else {
+      for (let x = 0; x < data.menu.length; x++) {
+        if (data.menu[x].jenis == category) {
+          let coba = `
+          <div class="col-lg-4 p-2 d-flex align-items-stretch">
+          <div class="card">
+              <img src="${data.menu[x].gambar}" class="card-img-top" alt="...">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">${data.menu[x].nama}</h5>
+                  <p class="card-text">${data.menu[x].deskripsi}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">${data.menu[x].harga}</li>
+                  <li class="list-group-item">${data.menu[x].estimasi}</li>
+                </ul>
+          </div>
+        </div> 
+    `
+          console.log("loop jalan");
+          show.append(coba);
+
+        }
+      }
+    }
+
+
+
+  }
+
+
+
+
+</script>

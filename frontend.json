@@ -1,0 +1,35 @@
+{
+    "user": {
+        "name": " ",
+        "cart": [
+            {
+                "name": " ",
+                "quantity": "",
+                "image": "",
+                "variants": [
+                    {
+                        "name": "",
+                        "price": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "kategori": {
+        "name": "",
+        "icon": "",
+        "url": ""
+    },
+    "item": {
+        "name": " ",
+        "image": "",
+        "descriptions": "",
+        "url": "",
+        "variants": [
+            {
+                "name": "",
+                "price": ""
+            }
+        ]
+    }
+}

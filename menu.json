@@ -1,0 +1,84 @@
+{
+    "menu": [
+        {
+            "jenis": "makanan",
+            "nama": "Mie Aceh",
+            "deskripsi": "Mie rempah dengan topping seafood atau daging yang sangat menggugah selera",
+            "harga": "Rp 13.000",
+            "estimasi": "5 menit",
+            "gambar": "https://i.ibb.co/fp0bZmc/5280-ccd96c3f4176512e4f3e603a8e1fdd6d.jpg"
+        },
+        {
+            "jenis": "minuman",
+            "nama": "Es Campur",
+            "deskripsi": "Es dingin dengan buah melimpah",
+            "harga": "Rp 8.000",
+            "estimasi": "3 menit",
+            "gambar": "https://i.ibb.co/Bjvv9j9/es-campur.jpg"
+        },
+        {
+            "jenis": "cemilan",
+            "nama": "Pisang Saleh",
+            "deskripsi": "manis sehat bergizi",
+            "harga": "Rp 10.000",
+            "estimasi": "Segera dihidangkan",
+            "gambar": "https://i.ibb.co/YdTQSbF/fridajoincoffee-595x363.jpg"
+        },
+        {
+            "jenis": "makanan",
+            "nama": "Bakso",
+            "deskripsi": "Gumpalan daging dengan kuah kaldu yang nikmat",
+            "harga": "Rp 10.000",
+            "estimasi": "2 menit",
+            "gambar": "https://i.ibb.co/72Qv4HK/020184700-1518697892-Bakso-Liputan6.jpg"
+        },
+        {
+            "jenis": "minuman",
+            "nama": "Es Teh Manis",
+            "deskripsi": "Pelepas dahaga paling sederhana",
+            "harga": "Rp 5.000",
+            "estimasi": "Segera dihidangkan",
+            "gambar": "https://i.ibb.co/DCJbnRz/0af32d8b-36b7-4555-8e79-4fd54c98f795-169.jpg"
+        },
+        {
+            "jenis": "cemilan",
+            "nama": "Gulali",
+            "deskripsi": "enak banget loch",
+            "harga": "Rp 5.000",
+            "estimasi": "Segera Dihidangkan",
+            "gambar": "https://i.ibb.co/p1MrKQv/cotton-candy.jpg"
+        },
+        {
+            "jenis": "makanan",
+            "nama": "Rendang",
+            "deskripsi": "Daging dengan tingkat kematangan very well done",
+            "harga": "Rp 20.000",
+            "estimasi": "30 menit",
+            "gambar": "https://i.ibb.co/QddLgL5/resep-rendang.jpg"
+        },
+        {
+            "jenis": "minuman",
+            "nama": "Es Dawet",
+            "deskripsi": "Pernah rasain ga sih santan ditambah gula merah malah jadi minuman menyegarkan",
+            "harga": "Rp 5.000",
+            "estimasi": "Segera Dihidangkan",
+            "gambar": "https://i.ibb.co/zGV4dzw/2bdd01a4-0115-495d-8b2b-b8944b8ee226-169.jpg"
+        },
+        {
+            "jenis": "cemilan",
+            "nama": "Kripik Singkong",
+            "deskripsi": "Kriuk krenyes crunchy",
+            "harga": "Rp 8.000",
+            "estimasi": "Segera Dihidangkan",
+            "gambar": "https://i.ibb.co/MVvHnzY/22cfe1e8-a63b-40a6-a890-b987ef8b3f4f-169.jpg"
+        },
+        {
+            "jenis": "makanan",
+            "nama": "Bola Udang",
+            "deskripsi": "enak banget loch",
+            "harga": "Rp 20.000",
+            "estimasi": "5 menit",
+            "gambar": "https://i.ibb.co/7Rjfsc6/photo.jpg"
+        }
+    ]
+}
